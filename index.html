@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <header>
+        <h1>Informe os contatos</h1>
+    </header>
+    <div class="container">
+        <div class="contato">
+            <p class="mensagem"></p>
+            <form id="formularioContatos">
+                <input type="text" id="nomeContato" placeholder="Informe o nome do contato." required>
+                <input type="tel" id="telefoneContato" placeholder="Informe o telefone do contato." required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de Contatos</td>
+                    <td id="totalContatos" >--</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; Todos os direitos reservados</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
